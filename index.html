@@ -3,10 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Buoi Dictionary</title>
+
+    <!-- Thêm đoạn script vào đây -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("downloadButton")
+          .addEventListener("click", function () {
+            // Đường dẫn đến file cần tải về
+            var filePath = "./source/BDict.apk";
+
+            // Tạo liên kết đến file
+            var downloadLink = document.createElement("a");
+            downloadLink.href = filePath;
+            downloadLink.download = "BDict.apk"; // Tên của file sau khi tải về
+
+            // Thêm liên kết vào trang và kích thước nó
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+
+            // Loại bỏ liên kết sau khi đã sử dụng
+            document.body.removeChild(downloadLink);
+          });
+      });
+    </script>
   </head>
   <body>
-    <header>BDict</header>
+    <header class="mainHeader">BDict</header>
     <div>
       <h1>About us</h1>
       <p>BDict is a good app, use should use it or die</p>
@@ -24,15 +49,15 @@
     <div>
       <div>
         <img src="android.jpg" />
-        <button>Download</button>
+        <button id="downloadButton">Download</button>
       </div>
       <div>
         <img src="android.jpg" />
-        <button>Download</button>
+        <button id="downloadButton">Download</button>
       </div>
       <div>
         <img src="android.jpg" />
-        <button>Download</button>
+        <button id="downloadButton">Download</button>
       </div>
     </div>
   </body>
