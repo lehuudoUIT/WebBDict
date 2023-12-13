@@ -10,15 +10,15 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document
-          .getElementById("downloadButton")
+          .querySelector(".down-btn")
           .addEventListener("click", function () {
             // Đường dẫn đến file cần tải về
-            var filePath = "./source/BDictVersion1.apk";
+            var filePath = "./source/BDictVersion2.apk";
 
             // Tạo liên kết đến file
             var downloadLink = document.createElement("a");
             downloadLink.href = filePath;
-            downloadLink.download = "BDictVersion1.apk"; // Tên của file sau khi tải về
+            downloadLink.download = "BDictVersion2.apk"; // Tên của file sau khi tải về
 
             // Thêm liên kết vào trang và kích thước nó
             document.body.appendChild(downloadLink);
@@ -45,20 +45,6 @@
         <li>Excellent</li>
       </ul>
     </div>
-
-    <div>
-      <div>
-        <img src="android.jpg" />
-        <button id="downloadButton">Download</button>
-      </div>
-      <div>
-        <img src="android.jpg" />
-        <button id="downloadButton">Download</button>
-      </div>
-      <div>
-        <img src="android.jpg" />
-        <button id="downloadButton">Download</button>
-      </div>
-    </div>
+    <button class="down-btn">Download</button>
   </body>
 </html>

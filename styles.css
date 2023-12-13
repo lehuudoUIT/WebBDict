@@ -1,3 +1,23 @@
 .mainHeader {
     size: 200px;
 }
+
+.down-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.down-btn:hover {
+    opacity: 0.8;
+}
+
+.down-btn:active {
+    opacity: 0.5;
+}
