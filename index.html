@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assests/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,30 +11,6 @@
       rel="stylesheet"
     />
     <title>Buoi Dictionary</title>
-
-    <!-- Thêm đoạn script vào đây -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .querySelector(".down-btn")
-          .addEventListener("click", function () {
-            // Đường dẫn đến file cần tải về
-            var filePath = "./source/BDictMaster.apk";
-
-            // Tạo liên kết đến file
-            var downloadLink = document.createElement("a");
-            downloadLink.href = filePath;
-            downloadLink.download = "BDictNewVersion.apk"; // Tên của file sau khi tải về
-
-            // Thêm liên kết vào trang và kích thước nó
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-
-            // Loại bỏ liên kết sau khi đã sử dụng
-            document.body.removeChild(downloadLink);
-          });
-      });
-    </script>
   </head>
   <body>
     <ul class="navBar">
@@ -44,9 +20,9 @@
     </ul>
 
     <div class="logo">
-      <img class="laptop" src="source/image/laptop.png" alt="laptop" />
-      <img class="title" src="source/image/appname.png" alt="appname" />
-      <img class="phone" src="source/image/phone.png" alt="phone" />
+      <img class="laptop" src="assests/img/laptop.png" alt="laptop" />
+      <img class="title" src="assests/img/appname.png" alt="appname" />
+      <img class="phone" src="assests/img/phone.png" alt="phone" />
     </div>
 
     <div class="content">
