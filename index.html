@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
     <title>Buoi Dictionary</title>
 
     <!-- Thêm đoạn script vào đây -->
@@ -31,20 +37,44 @@
     </script>
   </head>
   <body>
-    <header class="mainHeader">BDict</header>
-    <div>
-      <h1>About us</h1>
-      <p>BDict is a good app, use should use it or die</p>
+    <ul class="navBar">
+      <li><a href="index.html" style="background-color: #476e47">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="download.html">Download</a></li>
+    </ul>
+
+    <div class="logo">
+      <img class="laptop" src="source/image/laptop.png" alt="laptop" />
+      <img class="title" src="source/image/appname.png" alt="appname" />
+      <img class="phone" src="source/image/phone.png" alt="phone" />
     </div>
 
-    <div>
-      <h1>Feature</h1>
+    <div class="content">
+      <p class="title">BDict</p>
+      <p>
+        BDict is a comprehensive dictionary application developed using C#. It
+        enables users to look up word definitions, synonyms, antonyms, and usage
+        examples in the English language.
+      </p>
+      <p class="title">About Us</p>
+      <p>
+        We are proud to present the dynamic team of students from the University
+        of Information Technology (UIT), working collaboratively on the
+        innovative BDict Dictionary App project. Under the expert guidance of
+        our instructor, PhD. Huynh Tuan Anh, we are utilizing cutting-edge
+        technology with .NET MAUI to create a state-of-the-art language tool
+        that transcends traditional boundaries.
+      </p>
+      <p>Our team <b>Century Project</b> includes 3 members:</p>
       <ul>
-        <li>Power full</li>
-        <li>Beautiful</li>
-        <li>Excellent</li>
+        <li>Le Huu Do - 22520254</li>
+        <li>Doan Danh Du - 22520260</li>
+        <li>Le Toan - 22521487</li>
+      </ul>
+      <p>Instructor:</p>
+      <ul>
+        <li>PhD. Huynh Tuan Anh</li>
       </ul>
     </div>
-    <button class="down-btn">Download</button>
   </body>
 </html>
