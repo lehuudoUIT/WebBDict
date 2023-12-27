@@ -43,7 +43,6 @@ body {
     background-color: #476E47;
 }
 
-/* Customize */
 
 .logo {
     display: flex;
@@ -68,6 +67,7 @@ body {
     max-width: 25%;
     height: auto;
 }
+/* Customize */
 
 .content {
     font-size: x-large;
@@ -80,6 +80,84 @@ body {
     font-family: 'Courgette', cursive;
     font-size: xxx-large;
     font-weight: bold;
+}
+
+/* searching */
+.searching {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searching .searchImg{
+    flex: 1;
+    max-width: 20%;
+    height: auto;
+    margin: 50px;
+    margin-left: 100px;
+}
+
+.searching .content{
+    flex: 2;
+}
+
+/* resulting */
+.resulting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #A3B18A;
+}
+
+.resulting .resultImg{
+    flex: 1;
+    max-width: 20%;
+    height: auto;
+    margin: 50px;
+    margin-right: 100px;
+}
+
+.resulting .content{
+    flex: 2;
+}
+
+/* translating */
+.translating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.translating .translateImg{
+    flex: 1;
+    max-width: 20%;
+    height: auto;
+    margin: 50px;
+    margin-right: 100px;
+}
+
+.translating .content{
+    flex: 2;
+}
+
+/* bookmark */
+.bookmark {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #A3B18A;
+}
+
+.bookmark .bookmarkImg{
+    flex: 1;
+    max-width: 20%;
+    height: auto;
+    margin: 50px;
+    margin-right: 100px;
+}
+
+.bookmark .content{
+    flex: 2;
 }
 
 .footer {
@@ -101,4 +179,3 @@ body {
   .footer .contact i{
       margin-right: 5px;
   }
-
