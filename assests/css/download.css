@@ -8,7 +8,6 @@ body {
 body {
     margin: 0;
     background: linear-gradient(to bottom, #A3B18A 0%, White 50%, #ffffff 100%);
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -97,7 +96,7 @@ body {
     justify-content: space-evenly;
 }
 
-.downBtn {
+.AndroidDownBtn {
     font-size: x-large;
     border-radius: 5px;
     border: none;
@@ -108,32 +107,29 @@ body {
     transition: background-color 0.15s;
 }
 
-.downBtn:hover {
+.AndroidDownBtn:hover {
     opacity: 0.8;
 }
 
-.downBtn:active {
+.AndroidDownBtn:active {
     background-color: #588157;
 }
 
-.footer {
-  width: 100%;
-  background-color: #588157;
-  color: black;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 5px;
-  bottom: 0;
-  position: fixed;
+.WindowDownBtn {
+    font-size: x-large;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    margin-bottom: 0px;
+    background-color: #B7CBAE;
+    padding: 10px;
+    transition: background-color 0.15s;
 }
 
-.footer p {
-    margin: 4px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.WindowDownBtn:hover {
+    opacity: 0.8;
 }
 
-.footer .contact i{
-    margin-right: 5px;
+.WindowDownBtn:active {
+    background-color: #588157;
 }
